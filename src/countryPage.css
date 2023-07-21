@@ -1,0 +1,135 @@
+.countryPage {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--light-mode-text);
+}
+
+.countryPage a {
+    text-decoration: none;
+    margin-right: 5px;
+    border-radius: 5px;
+    padding: 2px 7px;
+    color: var(--light-mode-text);
+    box-shadow: 0 0 5px hsla(0, 0%, 0%, 0.5);
+}
+
+.countryPage p {
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.countryPage p span {
+    font-weight: 300;
+}
+
+.back {
+    margin-bottom: 40px;
+    display: grid;
+    place-content: center;
+    height: 40px;
+}
+
+.back a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    gap: 7px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+
+.details {
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    text-align: left;
+}
+
+.details .flag {
+    width: 450px;
+    height: 100%;
+}
+
+.details .flag img {
+    width: 100%;
+    height: 100%;
+}
+
+.details .facts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: flex-start;
+}
+
+.details .facts .name h2 {
+    font-weight: 800;
+}
+
+.details .facts .info {
+    display: flex;
+    gap: 50px;
+}
+
+.details .border p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.details .border a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.App.dark .countryPage {
+    color: var(--white);
+}
+
+.App.dark a {
+    color: var(--white);
+    background-color: var(--dark-mode-ele);
+}
+
+@media (max-width: 420px) {
+    .countryPage {
+        padding: 0 25px;
+    }
+
+    .details {
+        height: calc(100% - 80px);
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .details .flag {
+        width: 100%;
+        height: 250px;
+    }
+
+    .details .facts {
+        /* height: 70%; */
+        justify-content: space-between;
+    }
+
+    .details .facts .name {
+        margin-bottom: 30px;
+    }
+
+    .details .facts .info {
+        flex-direction: column;
+        gap: 30px;
+        margin-bottom: 30px;
+    }
+
+    .details .border p {
+        display: block;
+    }
+}

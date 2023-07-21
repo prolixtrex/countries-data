@@ -1,0 +1,128 @@
+.navigation {
+    margin-bottom: 30px;
+}
+
+.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .search {
+    height: 40px;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 0 20px 0;
+    box-shadow: 0 0 10px hsla(0, 0%, 0%, 0.1);
+    border-radius: 7px;
+}
+
+.form .search label {
+    height: 100%;
+    display: grid;
+    place-content: center;
+}
+
+.form .search .icon {
+    color: var(--light-mode-input);
+    cursor: pointer;
+}
+
+.form .search input {
+    height: 100%;
+    width: 350px;
+    border: none;
+}
+
+.form .search input:focus,
+.form .filter select:focus {
+    border: none;
+    outline: none;
+}
+
+.form .filter {
+    height: 40px;
+    width: 200px;
+    position: relative;
+    box-shadow: 0 0 10px var(--box-shadow-col);
+    border-radius: 7px;
+}
+
+.form .filter select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    color: var(--light-mode-input);
+}
+
+.form .filter .caret {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.App.dark input::-webkit-input-placeholder {
+    background-color: var(--dark-mode-ele);
+    color: var(--white);
+}
+
+.App.dark input::-moz-placeholder {
+    background-color: var(--dark-mode-ele);
+    color: var(--white);
+}
+
+.App.dark input:-ms-input-placeholder {
+    background-color: var(--dark-mode-ele);
+    color: var(--white);
+}
+
+.App.dark input::-ms-input-placeholder {
+    background-color: var(--dark-mode-ele);
+    color: var(--white);
+}
+
+.App.dark .search,
+.App.dark input,
+.App.dark input::placeholder,
+.App.dark select,
+.App.dark .icon {
+    background-color: var(--dark-mode-ele);
+    color: var(--white);
+}
+
+@media (max-width: 420px) {
+    .navigation {
+        width: 100vw;
+    }
+
+    .form {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        width: calc(100vw - 30px);
+    }
+
+    .form .search {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .form .search input {
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--white);
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 70px;
+    font-weight: 800;
+}
+
+.App.dark .heading {
+    background-color: var(--dark-mode-ele);
+}
+
+.heading button {
+    background-color: transparent;
+    border: none;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    cursor: pointer;
+    font-family: nunito-sans;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.heading button .moon {
+    height: 14px;
+}
+
+.App.dark .heading button {
+    color: var(--white);
+}
+
+@media (max-width: 420px) {
+    .heading {
+        padding: 0 10px;
+        font-size: 10px;
+    }
+}
