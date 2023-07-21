@@ -29,10 +29,8 @@ Users should be able to:
 
 ### Links
 
--   Solution URL:
-    [Add solution URL here](https://github.com/prolixtrex/countries-data)
--   Live Site URL:
-    [Add live site URL here](https://bright-countries.netlify.app)
+-   Solution URL: (https://github.com/prolixtrex/countries-data)
+-   Live Site URL: (https://bright-countries.netlify.app)
 
 ## My process
 
